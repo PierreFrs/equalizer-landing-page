@@ -160,6 +160,7 @@ main {
 /*footer styles*/
 
 footer {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items:flex-start;
@@ -280,7 +281,12 @@ footer {
 
 .find-us {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+}
+
+.find-us p {
+    max-width: 366px;
 }
 
 }
@@ -292,7 +298,62 @@ footer {
     body {
         max-width: 100%;
         background-image: url(./assets/bg-main-desktop.png);
-        background-position: top 150% right 30% ;
+        background-position: top 150% right -100%;
     }
 
+    .bg-image-container  {
+        max-width: 312px;
+    }
+
+    .bg-pattern-1 {
+        right: 0
+    }
+
+    header {
+        padding-left: 165px;
+    }
+
+    .statement {
+        padding-left: 165px;
+        max-width: 75%;
+    }
+
+    .statement-heading {
+        font-size: 4.888rem;
+    }
+
+    .statement-paragraph {
+        font-size: 1.111rem;
+        line-height: 1.7;
+    }
+
+    .visual {
+        max-width: 1110px;
+        margin: 300px auto 0;
+    }
+
+    .phone {
+        max-width: 312px;
+        top: -650px;
+        left: -300px
+    }
+
+    .premiumEQ-offer {
+        max-width: 446px;
+        top: -440px;
+        left: 750px;
+        padding: 48px 36px;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 165px;
+        padding: 0;
+    }
+
+    .find-us p {
+        max-width: 366px;
+    }
 }
