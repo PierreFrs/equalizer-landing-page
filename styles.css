@@ -7,20 +7,25 @@
 html {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 16px;
+    height: 100%;
+    display: grid;
+
 }
 
 /*body style*/
 
 body {
+    margin: auto;
     max-width: 375px;
     display: flex;
     flex-direction: column;
     background-image: url(./assets/bg-main-mobile.png);
     background-repeat: no-repeat;
     background-position: top -15% right 200%;
+
 }
 
-.bg-pattern-1 {
+.bg-image-container {
     display: none;
 }
 
@@ -40,6 +45,7 @@ header {
 main {
     display: flex;
     flex-direction: column;
+    
 }
 
 /*statement styles*/
@@ -69,7 +75,7 @@ main {
 }
 
 .phone {
-    width: 209px;
+    max-width: 209px;
     position: relative;
     top: -552px;
 
@@ -190,8 +196,103 @@ path:hover {
 
 @media only screen and (min-width: 376px) {
 
+html {
+    font-size: 18px;
+    }
+
+body {
+    max-width: 768px;
+    background-image: url(./assets/bg-main-tablet.png);
+    background-position: top 150% right 30% ;
 }
 
+.bg-image-container  {
+    display: block;
+    max-width: 215px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.bg-pattern-1 {
+    width: 100%;
+    position: relative;
+    top: -32px;
+    right: -36px
+}
+
+header {
+    padding-left: 40px;
+}
+
+.statement {
+    padding-left: 40px;
+    max-width: 75%;
+}
+
+.visual {
+    max-height: 600px;
+}
+
+.phone {
+    max-width: 270px;
+    top: -600px;
+    left: -170px
+}
+
+.premiumEQ-offer {
+    max-width: 400px;
+    top: -440px;
+    left: 250px;
+    padding: 48px 36px;
+}
+
+.offer-paragraph {
+    font-size: 1rem;
+}
+
+.offer-header {
+    font-size: 1.777rem;
+}
+
+.number {
+    font-size: 3.61rem;
+}
+
+.period {
+    font-size: 1.111rem;
+}
+
+.buttons {
+    gap: .888rem;
+}
+
+.button {
+    font-size: 1rem;
+    padding: .888rem
+}
+
+footer {
+    margin-top: 120px;
+    padding: 64px 32px 0;
+}
+
+.find-us {
+    display: flex;
+    justify-content: space-between;
+}
+
+}
+
+
+
 @media only screen and (min-width: 769px) {
+
+    body {
+        max-width: 100%;
+        background-image: url(./assets/bg-main-desktop.png);
+        background-position: top 150% right 30% ;
+    }
 
 }
